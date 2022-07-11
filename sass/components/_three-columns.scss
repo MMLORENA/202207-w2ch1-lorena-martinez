@@ -1,0 +1,10 @@
+@use "equal-styles";
+@use "../colors/colors-columns";
+
+.main-box {
+  display: flex;
+}
+
+.main-box__box:first-child {
+  background-color: colors-columns.$color-Bright-orange;
+}
