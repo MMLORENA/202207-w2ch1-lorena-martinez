@@ -10,7 +10,7 @@
   align-content: center;
   font-family: "Lexend Deca", sans-serif;
 
-  .main-box__box:first-child {
+  .main-box:first-child {
     @include mixins-columns.box(colors-columns.$color-Bright-orange);
   }
 
