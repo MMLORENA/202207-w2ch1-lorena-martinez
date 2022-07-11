@@ -12,11 +12,9 @@
 
 @mixin box($color) {
   background-color: $color;
-  display: flex;
-  justify-content: center;
   align-items: center;
-  height: 100%;
+  padding: 3% 4% 5%;
+  flex: 1;
+  flex-direction: column;
   width: 100%;
-  height: 100%;
-  padding: 12px;
 }
