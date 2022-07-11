@@ -1,11 +1,14 @@
 @use "equal-styles";
 @use "../colors/colors-columns";
 @use "../mixins/mixins-columns";
+@import url("https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Lexend+Deca&display=swap");
 
 .main-box {
   display: flex;
   padding: 10% 20% 5%;
   align-content: center;
+  font-family: "Lexend Deca", sans-serif;
 
   .main-box__box:first-child {
     @include mixins-columns.box(colors-columns.$color-Bright-orange);
@@ -22,4 +25,9 @@
 
 .main-box__button {
   @include mixins-columns.button(colors-columns.$color-Bright-orange);
+  font-family: "Lexend Deca", sans-serif;
+}
+
+.car-title {
+  font-family: "Big Shoulders Display", sans-serif;
 }
