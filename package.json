@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "watch-sass": "npx sass sass/styles.scss css/styles.css --watch",
-    "production-sass": "npx sass sass/styles.scss styles/styles.css",
+    "production-sass": "npx sass sass/styles.scss css/styles.css",
     "prepare": "husky install"
   },
   "keywords": [],
