@@ -8,19 +8,8 @@
   display: flex;
   padding: 10% 20% 5%;
   align-content: center;
-  font-family: "Lexend Deca", sans-serif;
-
-  .main-box:first-child {
-    @include mixins-columns.box(colors-columns.$color-Bright-orange);
-  }
-
-  .main-box:nth-child(2) {
-    background-color: colors-columns.$color-Dark-cyan;
-  }
-
-  .main-box:nth-child(3) {
-    background-color: colors-columns.$color-Very-dark-cyan;
-  }
+  border-radius: 20%;
+  flex-direction: column;
 }
 
 .main-box__button {
@@ -30,4 +19,30 @@
 
 .car-title {
   font-family: "Big Shoulders Display", sans-serif;
+  color: colors-columns.$colors-white;
+  text-transform: uppercase;
+}
+.main-box > :first-child {
+  @include mixins-columns.box(colors-columns.$color-Bright-orange);
+}
+
+.main-box > :nth-child(2) {
+  @include mixins-columns.box(colors-columns.$color-Dark-cyan);
+}
+
+.main-box > :nth-child(3) {
+  @include mixins-columns.box(colors-columns.$color-Very-dark-cyan);
+}
+.car-text {
+  color: colors-columns.$colors-white;
+  font-size: 15px;
+  font-family: "Lexend Deca", sans-serif;
+  font-weight: 400;
+}
+
+@media (min-width: 600px) {
+  .main-box {
+    display: flex;
+    flex-direction: row;
+  }
 }
