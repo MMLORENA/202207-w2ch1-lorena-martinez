@@ -46,3 +46,12 @@
     flex-direction: row;
   }
 }
+
+.main-box__button:hover {
+  background-color: transparent;
+  color: colors-columns.$colors-white;
+  border: solid;
+  border-radius: 25px;
+
+  border-color: colors-columns.$colors-white;
+}
