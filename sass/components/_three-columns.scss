@@ -11,10 +11,11 @@
   border-radius: 20%;
   flex-direction: column;
 }
-
-.main-box__button {
-  @include mixins-columns.button(colors-columns.$color-Bright-orange);
-  font-family: "Lexend Deca", sans-serif;
+@media (min-width: 600px) {
+  .main-box {
+    display: flex;
+    flex-direction: row;
+  }
 }
 
 .car-title {
@@ -40,18 +41,27 @@
   font-weight: 400;
 }
 
-@media (min-width: 600px) {
-  .main-box {
-    display: flex;
-    flex-direction: row;
-  }
+.main-box__button.button-sedans {
+  @include mixins-columns.button(colors-columns.$color-Bright-orange);
 }
 
+.main-box__button.button-suvs {
+  @include mixins-columns.button(colors-columns.$color-Dark-cyan);
+}
+
+.main-box__button.button-luxury {
+  @include mixins-columns.button(colors-columns.$color-Very-dark-cyan);
+}
 .main-box__button:hover {
   background-color: transparent;
   color: colors-columns.$colors-white;
   border: solid;
   border-radius: 25px;
-
   border-color: colors-columns.$colors-white;
+}
+
+@media (min-width: 600px) {
+  .main-box__button {
+    content: inherit;
+  }
 }
